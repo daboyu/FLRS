@@ -21,6 +21,12 @@
  <div class="ts grid">
     <div class="six wide column"></div>
     <div class="four wide column">
+	<!--錯誤訊息--->
+		<div class="ts secondary negative message">
+			<div class="header">登入失敗</div>
+			<p>您的帳號密碼輸入錯誤，請重新登入。</p>
+		</div>
+	<!--錯誤訊息結束-->
 		<br>
 		<br>
             <form class="ts form">
@@ -34,7 +40,10 @@
 						<label>密碼</label>
 						<input type="password" placeholder="請輸入密碼">
 					</div>
-				<button type="button" class="ts positive fluid button">登入</button>
+					<div class="ts fluid separated vertical buttons">
+						<button class="ts inverted button">登入</button>
+						<button class="ts negative basic button">忘記密碼</button>
+					</div>
 			</fieldset>
             </form>
     <div class="six wide column"></div>
