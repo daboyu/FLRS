@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.rawgit.com/TeaMeow/TocasUI/2.3.2/dist/tocas.css" rel='stylesheet'>
+    <script src="https://cdn.rawgit.com/TeaMeow/TocasUI/2.3.2/dist/tocas.js"></script>
+    <title>FLRS</title>
+</head>
+<body>
+<div class="jumbotron text-center" id="title_bar" style="margin:0;padding: 0px;background-color: #FFFFFF">
+    <img src="https://i.imgur.com/ZcrcdOl.png?1" style="display:block; margin:auto;width: 40%">
+</div>
+<div class="ts six item pointing secondary container menu">
+    <a class="item" href="/index.html">首頁</a>
+    <a class="item">預約狀態查詢</a>
+    <a class="item">座位登記</a>
+    <a class="active item" href="/setting.html">設定</a>
+    <a class="item">使用教學</a>
+    <a class="right item" href="/login.html">登入</a>
+</div>
+<!--選單結束-->
+<!--使用者設定-->
+<div class="ts container segment center aligned">
+	<h4 class="ts dividing header ">使用者設定</h4>
+	<p class="ts center aligned medium sub header">帳戶設定</p>
+		<button class="ts primary basic button" onclick=ts('#pw').modal("show")>更改密碼</button>
+		<button class="ts inherit basic button" onclick=ts('#email').modal("show")>更改信箱</button>
+</div>
+<!--更改密碼-->
+<div class="ts modals dimmer">
+<dialog id="pw" class="ts middle modal" open>
+    <div class="ts center aligned header">
+        更改密碼
+    </div>
+<div class="ts grid">
+    <div class="five wide column"></div>
+    <div class="six wide column">
+		<div class="ts form">
+			<div class="fields">
+				<div class="sixteen wide field">
+					<label>請輸入舊密碼</label>
+				<input type="text">
+				</div>
+			</div>
+			<div class="ts form">
+				<div class="sixteen wide field">
+					<br><label>請輸入新密碼</label>
+				<input type="password">
+				</div>
+			</div>
+			<div class="ts form">
+				<div class="sixteen wide field">
+					<br><label>請輸入新密碼</label>
+				<input type="password">
+				</div>
+			</div>
+		</div>
+		<div class="ts fluid separated vertical buttons">
+		<div class="center aligned actions">
+			<br><button class="ts positive button">
+			確認更改
+			</button><br><br>
+		</div>
+		</div>
+	</div>
+	<div class="five wide column"></div>
+</div>
+</dialog>
+</div>
+<!--更改密碼結束-->
+<!--更改信箱-->
+<div class="ts modals dimmer">
+<dialog id="email" class="ts middle modal" open>
+    <div class="ts center aligned header">
+        更改信箱
+    </div>
+<div class="ts grid">
+    <div class="five wide column"></div>
+    <div class="six wide column">
+		<div class="ts form">
+			<div class="ts form">
+				<div class="sixteen wide field input">
+					<br><label>您的舊信箱</label>
+				<input type="text" readonly="readonly" placeholder="abo@aa.bb.cc">
+				</div>
+			</div>
+			<div class="ts form">
+				<div class="sixteen wide field">
+					<br><label>請輸入新信箱</label>
+				<input type="text">
+				</div>
+			</div>
+		</div>
+		<div class="ts fluid separated vertical buttons">
+		<div class="center aligned actions">
+			<br><button class="ts positive button">
+			確認更改
+			</button><br><br>
+		</div>
+		</div>
+	</div>
+	<div class="five wide column"></div>
+</div>
+</dialog>
+</div>
+<!--更改信箱結束-->
+</body>
+</html>
