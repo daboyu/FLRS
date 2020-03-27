@@ -27,6 +27,108 @@
 		<button class="ts primary basic button" onclick=ts('#pw').modal("show")>更改密碼</button>
 		<button class="ts inherit basic button" onclick=ts('#email').modal("show")>更改信箱</button>
 </div>
+<!--使用者設定結束-->
+<!--管理者設定-->
+<div class="ts container segment center aligned">
+	<h4 class="ts dividing header ">管理者設定</h4>
+	<p class="ts center aligned medium sub header">閱覽室開放設定</p>
+		<!--開關-->
+		<div class="ts toggle checkbox" style="margin-right:10px">
+			<input type="checkbox" id="roomA">
+			<label for="roomA">閱覽室A</label>
+		</div>
+		<!--開關-->
+		<div class="ts toggle checkbox">
+			<input type="checkbox" id="roomB">
+			<label for="roomB">閱覽室B</label>
+		</div><br><br><hr>
+	<!--使用者座位設定-->
+	<button class="ts negative basic button" onclick=ts('#userseatmanage').modal("show")>座位登記管理</button>
+	<button class="ts positive basic button" onclick=ts('#usermanage').modal("show")>使用者管理</button>
+</div>
+
+
+<!--javascript-->	
+<!--登記管理-->
+<div class="ts modals dimmer">
+<dialog id="userseatmanage" class="ts middle modal" open>
+    <div class="ts center aligned header">
+        登記管理
+    </div>
+<div class="ts grid">
+    <div class="two wide column"></div>
+    <div class="twelve wide center aligned column">
+		<!--卡片-->
+		<div class="ts cards">
+			<div class="ts flatted card">
+				<div class="secondary extra content">
+					<div class="left aligned header">11901王小明</div>
+				</div>
+				<div class="content">
+						預約座位:A37
+					<div class="actions">
+						<div class="ts separated secondary icon buttons">
+							<button class="ts button">
+								<i class="remove negative icon"></i>
+							</button>
+							<button class="ts button">
+								<i class="vertical ellipsis icon"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ts flatted card">
+				<div class="secondary extra content">
+					<div class="left aligned header">11901王小明</div>
+				</div>
+				<div class="content">
+				預約座位:A37
+					<div class="actions">
+						<div class="ts separated secondary icon buttons">
+							<button class="ts button">
+								<i class="remove negative icon"></i>
+							</button>
+							<button class="ts button">
+								<i class="vertical ellipsis icon"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ts flatted card">
+				<div class="secondary extra content">
+					<div class="left aligned header">11901王小明</div>
+				</div>
+				<div class="content">
+				預約座位:A37
+					<div class="actions">
+						<div class="ts separated secondary icon buttons">
+							<button class="ts button">
+								<i class="remove negative icon"></i>
+							</button>
+							<button class="ts button">
+								<i class="vertical ellipsis icon"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--卡片結束-->
+		<div class="ts fluid separated vertical buttons">
+		<div class="center aligned actions">
+			<br><button class="ts positive button">
+			完成
+			</button><br><br>
+		</div>
+		</div>
+	</div>
+	<div class="two wide column"></div>
+<!--登記管理結束-->
+</div>
+</dialog>
+</div>
 <!--更改密碼-->
 <div class="ts modals dimmer">
 <dialog id="pw" class="ts middle modal" open>
@@ -105,5 +207,6 @@
 </dialog>
 </div>
 <!--更改信箱結束-->
+<!--javascriptend-->
 </body>
 </html>
