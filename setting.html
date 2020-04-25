@@ -45,10 +45,83 @@
 	<!--使用者座位設定-->
 	<button class="ts negative basic button" onclick=ts('#userseatmanage').modal("show")>座位登記管理</button>
 	<button class="ts positive basic button" onclick=ts('#usermanage').modal("show")>使用者管理</button>
+	<button class="ts inherit basic button" onclick=ts('#banned').modal("show")>禁止預約者管理</button>
 </div>
 
 
 <!--javascript-->
+<!--禁止預約者管理-->
+<div class="ts modals dimmer">
+<dialog id="banned" class="ts middle modal" open>
+    <div class="ts center aligned header">
+        禁止預約者管理
+    </div>
+<div class="ts container grid">
+    <div class="two wide column"></div>
+    <div class="twelve wide center aligned column">
+		<!--表格-->
+<div class="ts action input">
+    <input type="text" placeholder="搜尋...">
+    <button class="ts button">搜尋</button>
+</div>
+<table class="ts selectable center aligned table">
+    <thead>
+        <tr>
+            <th>學號</th>
+            <th>班級</th>
+			<th>座號</th>
+			<th>姓名</th>
+			<th>剩餘處分天數</th>
+			<th>動作</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>810000</td>
+            <td>119</td>
+			<td>02</td>
+            <td>黃魷魚</td>
+			<td>5d:7h:30m:55s</td>
+			<td>
+				<button class="ts small negative basic button" )>移除</button>
+			</td>
+        </tr>
+        <tr>
+            <td>810000</td>
+            <td>119</td>
+			<td>03</td>
+            <td>王大明</td>
+			<td>6d:1h:01m:05s</td>
+			<td>
+				<button class="ts small negative basic button" )>移除</button>
+			</td>
+        </tr>
+        <tr>
+            <td>810000</td>
+            <td>119</td>
+			<td>04</td>
+            <td>黃猷珵</td>
+			<td>270d:00h:00m:00s</td>
+			<td>
+				<button class="ts small negative basic button" )>移除</button>
+			</td>
+        </tr>
+    </tbody>
+</table>
+		<!--表格結束-->
+		<div class="ts fluid separated vertical buttons">
+		<div class="center aligned actions">
+			<br><button class="ts positive button">
+			完成
+			</button><br><br>
+		</div>
+		</div>
+	</div>
+	<div class="two wide column"></div>
+</div>
+</dialog>
+</div>
+<!--禁止預約者管理結束-->
 <!--學生管理-->
 <div class="ts modals dimmer">
 <dialog id="usermanage" class="ts middle modal" open>
