@@ -48,7 +48,85 @@
 </div>
 
 
-<!--javascript-->	
+<!--javascript-->
+<!--學生管理-->
+<div class="ts modals dimmer">
+<dialog id="usermanage" class="ts middle modal" open>
+    <div class="ts center aligned header">
+        學生管理
+    </div>
+<div class="ts container grid">
+    <div class="one wide column"></div>
+    <div class="forteen wide center aligned column">
+		<!--表格-->
+<div class="ts action input">
+    <input type="text" placeholder="搜尋...">
+    <button class="ts button">搜尋</button>
+</div>
+<table class="ts selectable center aligned table">
+    <thead>
+        <tr>
+            <th>學號</th>
+            <th>班級</th>
+			<th>座號</th>
+			<th>姓名</th>
+			<th>本月預約未到次數</th>
+			<th>動作</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>810000</td>
+            <td>119</td>
+			<td>01</td>
+            <td>王小明</td>
+			<td>0</td>
+			<td>
+				<button class="ts small primary basic button" onclick=ts('#reservehistory').modal("show")>預約歷史</button>
+				<button class="ts small info basic button" onclick=ts('#breakhistory').modal("show")>違規歷史</button>
+				<button class="ts small negative basic button" onclick=ts('#suretoban').modal("show")>禁止預約(30天)</button>
+			</td>
+        </tr>
+        <tr>
+            <td>810000</td>
+            <td>119</td>
+			<td>01</td>
+            <td>王小明</td>
+			<td>0</td>
+			<td>
+				<button class="ts small primary basic button" onclick=ts('#reservehistory').modal("show")>預約歷史</button>
+				<button class="ts small info basic button" onclick=ts('#breakhistory').modal("show")>違規歷史</button>
+				<button class="ts small negative basic button" onclick=ts('#suretoban').modal("show")>禁止預約(30天)</button>
+			</td>
+        </tr>
+        <tr>
+            <td>810000</td>
+            <td>119</td>
+			<td>01</td>
+            <td>王小明</td>
+			<td>0</td>
+			<td>
+				<button class="ts small primary basic button" onclick=ts('#reservehistory').modal("show")>預約歷史</button>
+				<button class="ts small info basic button" onclick=ts('#breakhistory').modal("show")>違規歷史</button>
+				<button class="ts small negative basic button" onclick=ts('#suretoban').modal("show")>禁止預約(30天)</button>
+			</td>
+        </tr>
+    </tbody>
+</table>
+		<!--表格結束-->
+		<div class="ts fluid separated vertical buttons">
+		<div class="center aligned actions">
+			<br><button class="ts positive button">
+			完成
+			</button><br><br>
+		</div>
+		</div>
+	</div>
+	<div class="one wide column"></div>
+</div>
+</dialog>
+</div>
+<!--學生管理結束-->
 <!--登記管理-->
 <div class="ts modals dimmer">
 <dialog id="userseatmanage" class="ts middle modal" open>
@@ -58,7 +136,7 @@
 <div class="ts grid">
     <div class="two wide column"></div>
     <div class="twelve wide center aligned column">
-		<!--卡片-->
+		<!--表格-->
 <div class="ts action input">
     <input type="text" placeholder="搜尋...">
     <button class="ts button">搜尋</button>
@@ -67,6 +145,7 @@
     <thead>
         <tr>
             <th>班級</th>
+			<th>座號</th>
             <th>姓名</th>
 			<th>預約位置</th>
 			<th>刪除</th>
@@ -75,25 +154,28 @@
     <tbody>
         <tr>
             <td>119</td>
+			<td>01</td>
             <td>王小明</td>
             <td>A5</td>
 			<td><button class="ts small negative basic button">刪除</button></td>
         </tr>
         <tr>
             <td>119</td>
+			<td>01</td>
             <td>王小明</td>
             <td>A5</td>
 			<td><button class="ts small negative basic button">刪除</button></td>
         </tr>
         <tr>
             <td>119</td>
+			<td>01</td>
             <td>王小明</td>
             <td>A5</td>
 			<td><button class="ts small negative basic button">刪除</button></td>
         </tr>
     </tbody>
 </table>
-		<!--卡片結束-->
+		<!--表格結束-->
 		<div class="ts fluid separated vertical buttons">
 		<div class="center aligned actions">
 			<br><button class="ts positive button">
@@ -103,10 +185,10 @@
 		</div>
 	</div>
 	<div class="two wide column"></div>
-<!--登記管理結束-->
 </div>
 </dialog>
 </div>
+<!--登記管理結束-->
 <!--更改密碼-->
 <div class="ts modals dimmer">
 <dialog id="pw" class="ts middle modal" open>
@@ -185,6 +267,6 @@
 </dialog>
 </div>
 <!--更改信箱結束-->
-<!--javascriptend-->
+<!--javascript_end-->
 </body>
 </html>
